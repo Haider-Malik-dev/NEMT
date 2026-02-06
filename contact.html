@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEMT - Contact</title>
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- HEADER (same as index) -->
+  <header class="header" data-header style="background-color:#1d8fd1;">
+    <div class="container">
+
+      <h1>
+        <a href="index.html" class="logo">NEMT</a>
+      </h1>
+
+      <nav class="navbar" data-navbar >
+
+        <div class="navbar-top">
+          <a href="index.html" class="logo">NEMT</a>
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list" >
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-link>
+              <span>Home</span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="about.html" class="navbar-link" data-nav-link>
+              <span>About</span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="services.html" class="navbar-link" data-nav-link>
+              <span>Service</span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <!-- ACTIVE ON CONTACT PAGE -->
+            <a href="contact.html" class="navbar-link active" data-nav-link>
+              <span>Contact</span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-contact">
+
+        <div>
+          <p class="contact-label">Call Us (U.S.)</p>
+          <a href="tel:12345678910" class="contact-number">1 (234) 567-8910</a>
+        </div>
+
+        <div class="contact-icon">
+          <ion-icon name="call-outline"></ion-icon>
+        </div>
+
+      </div>
+
+      <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- CONTACT / BOOK A RIDE FORM -->
+      <section class="section newsletter" aria-label="book-a-ride">
+        <div class="container">
+
+          <figure class="newsletter-banner img-holder">
+            <img src="./assets/images/newsletter-banner.png" width="303" height="381" alt="contact banner" class="">
+          </figure>
+
+          <div class="newsletter-content">
+
+            <form id="bookingForm" class="newsletter-form" novalidate>
+              <h2 class="h2 section-title">Book a Ride</h2>
+
+              <!-- Success / Error message area -->
+              <p id="formMsg" style="margin: 10px 0; font-weight: 600;"></p>
+
+              <input type="text" id="full_name" name="full_name" placeholder="Full Name" aria-label="Full Name"
+                class="email-field" required>
+
+              <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" class="email-field"
+                required>
+
+              <input type="tel" id="phone" name="phone" placeholder="Phone Number" aria-label="Phone Number"
+                class="email-field" required>
+
+              <input type="text" id="pickup_location" name="pickup_location" placeholder="Pickup Location"
+                aria-label="Pickup Location" class="email-field" required>
+
+              <select id="service" name="service" aria-label="Select Service" class="email-field" style="width: 100%;"
+                required>
+                <option value="" selected disabled>Select Service</option>
+                <option value="Ambulatory">Ambulatory</option>
+                <option value="Stretcher">Stretcher</option>
+                <option value="Wheelchair">Wheelchair</option>
+              </select>
+
+              <input type="date" id="ride_date" name="ride_date" aria-label="Date" class="email-field" required>
+
+              <input type="time" id="ride_time" name="ride_time" aria-label="Time" class="email-field" required>
+
+              <button id="submitBtn" type="submit" class="newsletter-btn">Submit Request</button>
+            </form>
+
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CONTACT INFO -->
+      <section class="section feature" aria-label="contact-info">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <div>
+              <p class="section-subtitle">Need Help?</p>
+
+              <h2 class="h2 section-title">Contact us anytime</h2>
+
+              <p class="section-text">
+                We’re here to answer questions, confirm availability, and make scheduling simple and stress-free.
+              </p>
+            </div>
+
+            <a href="tel:12345678910" class="btn">Call Now</a>
+
+          </div>
+
+          <ul class="feature-list grid-list">
+
+            <li>
+              <div class="feature-card" style="--card-number: '01'">
+
+                <div class="card-icon">
+                  <ion-icon name="call-outline" style="font-size: 48px;"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Phone</h3>
+
+                <p class="card-text">
+                  Speak with our team for urgent scheduling and quick questions.
+                </p>
+
+                <a href="tel:12345678910" class="card-btn" aria-label="Call">
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="feature-card" style="--card-number: '02'">
+
+                <div class="card-icon">
+                  <ion-icon name="mail-outline" style="font-size: 48px;"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Email</h3>
+
+                <p class="card-text">
+                  Prefer email? Send your request and we’ll respond as soon as possible.
+                </p>
+
+                <a href="mailto:info@example.com" class="card-btn" aria-label="Email">
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="feature-card" style="--card-number: '03'">
+
+                <div class="card-icon">
+                  <ion-icon name="location-outline" style="font-size: 48px;"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Service Area</h3>
+
+                <p class="card-text">
+                  Serving local families and businesses. Ask us if your location is covered.
+                </p>
+
+                <a href="#" class="card-btn" aria-label="Service area">
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- FOOTER (same as index) -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top section">
+
+        <div class="footer-brand">
+
+          <a href="index.html" class="logo">NEMT</a>
+
+          <p class="footer-text">
+            Safe, dependable, and compassionate non-medical transportation—supporting families, protecting children, and
+            helping businesses move forward with confidence.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Quick Links</p>
+          </li>
+
+          <li>
+            <a href="about.html" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="services.html" class="footer-link">Services</a>
+          </li>
+
+          <!-- <li>
+            <a href="services.html" class="footer-link">Updates</a>
+          </li> -->
+
+          <li>
+            <a href="#faqs" class="footer-link">FAQs</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Services</p>
+          </li>
+
+          
+          <li>
+            <a href="services.html" class="footer-link">Ambulatory Transportation</a>
+          </li>
+
+          <li>
+            <a href="services.html" class="footer-link">Wheelchair Transportation</a>
+          </li>
+
+          <li>
+            <a href="services.html" class="footer-link">Stretcher Transportation</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Contact</p>
+          </li>
+          <li><a href="tel:+12135550147" class="footer-link">+1 (213) 555-0147</a></li>
+          <li><a href="mailto:contact@nemttransit.com" class="footer-link">contact@nemttransit.com</a></li>
+          <li><span class="footer-link">1280 Maplewood Ave, Orlando, FL</span></li>
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2022 NEMT. All Rights Reserved by <a href="#" class="copyright-link">NEMT</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+  <!-- BACK TO TOP -->
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+  <script src="./assets/js/script.js" defer></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</body>
+
+</html>
